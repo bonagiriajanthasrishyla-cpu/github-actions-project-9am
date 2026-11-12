@@ -38,8 +38,8 @@ jobs:
     environment: production
 
     steps:
-    # 5. Download WAR artifact
-      - name: Download WAR artifact
+    # 5. Download WAR artifacts
+      - name: Download WAR artifacts
         uses: actions/download-artifact@v4
         with:
             name: myapp
