@@ -45,4 +45,3 @@ jobs:
           name: myapp
 
     
-          curl -I http://${{ secrets.TOMCAT_HOST }}/myapp
