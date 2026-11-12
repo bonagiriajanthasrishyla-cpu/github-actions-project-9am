@@ -49,7 +49,7 @@ jobs:
           run: |
           WAR-FILE=$(ls *.war)
           echo "Deploying $WAR-FILE to tomcat..."
-          crul -v --upload-file "$WAR-FILE"\ "http://${{secrets.TOMCAT_USER}}:${{secrets.TOMCAT_PASSWORD}}@${{sectrets.TOMCAT_HOST}}/manager/text/deploy?path/myapp&update=true"
+          crul -v --upload-file "$WAR-FILE"\ "http://${{secrets.TOMCAT_USER}}:${{secrets.TOMCAT_PASSWORD}}@${{secrets.TOMCAT_HOST}}/manager/text/deploy?path/myapp&update=true"
           
 
     
